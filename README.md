@@ -3,9 +3,8 @@
 Este Proyecto esta realizado en [Django](https://www.djangoproject.com/) ([rest framework](https://www.django-rest-framework.org/)) para backend y para frontend en [Angular](https://github.com/angular/angular-cli).
 Tiene como objetivo servir como prueba para Sin Trafico!
 
-[Login](https://raw.githubusercontent.com/lobami/sin-trafico-test/blob/master/assets/login.png)
-
-[Mapa](https://raw.githubusercontent.com/lobami/sin-trafico-test/blob/master/assets/mapa.png)
+![Login](https://github.com/lobami/sin-trafico-test/blob/master/assets/login.png)
+![Mapa](https://github.com/lobami/sin-trafico-test/blob/master/assets/mapa.png)
 
 ## Instalando entorno de Backend
 
@@ -17,7 +16,7 @@ Despues de esto, es necesario tener una [base de datos en postgres, asi como un 
 Una vez creada la base de datos, nos vamos al archivo 'manage.py' en el cual editaremosla variable de entorno de ejecucion, por defecto esta en 'DEV' para desarrollo, pero si queremos usar la configuración para produccion, cambiariamos a 'deploy'.
 
 
-[manage](https://raw.githubusercontent.com/lobami/sin-trafico-test/blob/master/assets/manage.png)
+![Manage](https://github.com/lobami/sin-trafico-test/blob/master/assets/manage.png)
 
 
 Una vez designado el rol que se usara para el entorno de ejecucion, entraremos a su configuracion 'backend/settings/archivo_de_conf_elegido.py'
@@ -32,8 +31,21 @@ Las pruebas unitarias usan la libreria [APITestCase](https://www.django-rest-fra
 
 ### Corriendo las pruebas
 Corremos el comando `pytest` y automaticamente correra las pruebas por modulo, cada modulo tiene su paquete y cada paquete tiene otro dependiendo de lo que se quiere probar, en este caso solo se hizo un demo para comprobar que el endpoint 'users/id_del_usuario/units/' traiga unicamente las unidades del usuario.
+![Pytest](https://github.com/lobami/sin-trafico-test/blob/master/assets/pytest.png)
 
-[Pruebas](https://raw.githubusercontent.com/lobami/sin-trafico-test/blob/master/assets/pytest.png)
+### Ejemplos de peticiones desde PostMan
+Obteniendo el token del usuario
+![Token](https://github.com/lobami/sin-trafico-test/blob/master/assets/token.png)
+
+Obteniendo las unidades de ese usuario
+![Pytest](https://github.com/lobami/sin-trafico-test/blob/master/assets/units.png)
+
+Posteando una unidad
+![Post_unit](https://github.com/lobami/sin-trafico-test/blob/master/assets/post_unit.png)
+
+Posteando un tracking (para que al obtener el objeto de las unidades, en el esten las coordenadas mas recientes)
+![Post_tracking](https://github.com/lobami/sin-trafico-test/blob/master/assets/post_tracking.png)
+
 
 
 # Frontend
