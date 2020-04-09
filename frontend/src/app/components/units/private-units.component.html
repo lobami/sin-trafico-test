@@ -20,11 +20,15 @@
         <td data-title="Form Name"> {{data.name}}</td>
         <td data-title="Description"> {{data.plates}}</td>
         <td data-title="Acciones">
-          <button id="AsDownload" class="btn btn-success"><a href="{{data.name}}"
-              target="_blank">Descargar</a></button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bootstrapModel2">Editar</button>
           <button class="btn btn-danger"
             (click)="UnitService.deleteUnit(data.id)">Eliminar</button>
         </td>
       </tr>
     </tbody>
   </table>
+
+  
+
+ 
+  
