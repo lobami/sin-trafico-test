@@ -49,6 +49,8 @@ Posteando un tracking (para que al obtener el objeto de las unidades, en el este
 
 
 # Frontend
+## Instalando dependencias
+Dentro de la carpeta frontend correr el comando `yarn install` (yo prefiero yarn) pero si prefieres npm `npm install` para instalar las dependencias.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
 
