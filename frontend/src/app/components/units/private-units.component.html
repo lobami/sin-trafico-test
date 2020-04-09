@@ -1,0 +1,30 @@
+<div class="row">
+    <div id="map"></div>
+    <div class="col-md-4" *ngFor="let task of privateTasks">
+        <div id="map"></div>
+    </div>
+    
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th class="textarea">Nombre de la unidad
+        </th>
+        <th class="textarea">Placas
+        </th>
+        <th class="numeric">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of units">
+        <td data-title="Form Name"> {{data.name}}</td>
+        <td data-title="Description"> {{data.plates}}</td>
+        <td data-title="Acciones">
+          <button id="AsDownload" class="btn btn-success"><a href="{{data.name}}"
+              target="_blank">Descargar</a></button>
+          <button class="btn btn-danger"
+            (click)="UnitService.deleteUnit(data.id)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
